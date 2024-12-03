@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Universal Scoreboard</string>
+    <string-array name="Sports">
+        <item>Select a Sport...</item>
+        <item>Basketball</item>
+        <item>Football</item>
+        <item>Baseball</item>
+        <item>Soccer</item>
+    </string-array>
+</resources>

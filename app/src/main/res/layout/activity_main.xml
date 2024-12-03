@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/MainScreen"
+    tools:ignore="ExtraText,InvalidId"
+    android:background="@drawable/blk_bg">
+
+    <TextView
+        android:id="@+id/USTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:text="Universal Scoreboard"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="110px"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="@android:color/black"
+        android:layout_below="@+id/USTitle"
+        android:id="@+id/TitleBar"
+        />
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TitleBar"
+        android:text="Team 1"
+        android:textSize="75px"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:id="@+id/Team1Name"
+        />
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TitleBar"
+        android:layout_alignEnd="@+id/USTitle"
+        android:text="Team 2"
+        android:textSize="75px"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:id="@+id/Team2Name"
+        />
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_below="@+id/Team1Name"
+        android:text="0"
+        android:textSize="150sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:id="@+id/Team1Score"
+        />
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_below="@+id/Team2Name"
+        android:layout_alignEnd="@+id/USTitle"
+        android:text="0"
+        android:textSize="400px"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:id="@+id/Team2Score"
+        />
+
+    <Switch
+        android:layout_width="200px"
+        android:layout_height="580px"
+        android:switchMinWidth="100px"
+        android:rotation="90"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Team1Name"
+        android:id="@+id/PosNegSwitch"
+        />
+
+    <TextView
+        android:layout_width="150px"
+        android:layout_height="580px"
+        android:switchMinWidth="100px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Team1Name"
+        android:text="\n/\\\n\n\\/"
+        android:textAlignment="center"
+        android:textSize="100px"
+        android:id="@+id/PNText"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:layout_below="@+id/PosNegSwitch"
+        android:id="@+id/ScoreTitleBar"
+        />
+
+    <EditText
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ScoreTitleBar"
+        android:hint="Team Name:"
+        android:textSize="75px"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:id="@+id/Team1EditName"
+        />
+
+    <EditText
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ScoreTitleBar"
+        android:layout_alignEnd="@+id/USTitle"
+        android:hint="Team Name:"
+        android:textSize="75px"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:id="@+id/Team2EditName"
+        />
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="250px"
+        android:layout_below="@+id/Team1EditName"
+        android:text="Score\n\n"
+        android:textSize="100px"
+        android:textColor="@color/black"
+        android:id="@+id/Score1Desc1"
+        />
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="250px"
+        android:layout_below="@+id/Score1Desc1"
+        android:text="Score\n\n"
+        android:textSize="100px"
+        android:textColor="@color/black"
+        android:id="@+id/Score1Desc2"
+        />
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="200px"
+        android:layout_below="@+id/Score1Desc2"
+        android:text="Score\n\n"
+        android:textSize="100px"
+        android:textColor="@color/black"
+        android:id="@+id/Score1Desc3"
+        />
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:layout_below="@+id/Team1EditName"
+        android:layout_alignEnd="@+id/Score1Desc1"
+        android:backgroundTint="@color/black"
+        android:text="+1"
+        android:textSize="50px"
+        android:id="@+id/Team1ScoreBtn1"
+        />
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:layout_below="@+id/Score1Desc1"
+        android:layout_alignEnd="@+id/Score1Desc2"
+        android:backgroundTint="@color/black"
+        android:text="+2"
+        android:textSize="50px"
+        android:id="@+id/Team1ScoreBtn2"
+        />
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:layout_below="@+id/Score1Desc2"
+        android:layout_alignEnd="@+id/Score1Desc3"
+        android:backgroundTint="@color/black"
+        android:text="+3"
+        android:textSize="50px"
+        android:id="@+id/Team1ScoreBtn3"
+        />
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="250px"
+        android:layout_below="@+id/Team2EditName"
+        android:layout_alignEnd="@+id/USTitle"
+        android:text="Score\n\n"
+        android:textSize="100px"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:id="@+id/Score2Desc1"
+        />
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="250px"
+        android:layout_below="@+id/Score2Desc1"
+        android:layout_alignEnd="@+id/USTitle"
+        android:text="Score\n\n"
+        android:textSize="100px"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:id="@+id/Score2Desc2"
+        />
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="200px"
+        android:layout_below="@+id/Score2Desc2"
+        android:layout_alignEnd="@+id/USTitle"
+        android:text="Score\n\n"
+        android:textSize="100px"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:id="@+id/Score2Desc3"
+        />
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:layout_below="@+id/Team2EditName"
+        android:layout_alignStart="@+id/Score2Desc1"
+        android:backgroundTint="@color/black"
+        android:text="+1"
+        android:textSize="50px"
+        android:id="@+id/Team2ScoreBtn1"
+        />
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:layout_below="@+id/Score2Desc1"
+        android:layout_alignStart="@+id/Score2Desc2"
+        android:backgroundTint="@color/black"
+        android:text="+2"
+        android:textSize="50px"
+        android:id="@+id/Team2ScoreBtn2"
+        />
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:layout_below="@+id/Score2Desc2"
+        android:layout_alignStart="@+id/Score2Desc3"
+        android:backgroundTint="@color/black"
+        android:text="+3"
+        android:textSize="50px"
+        android:id="@+id/Team2ScoreBtn3"
+        />
+
+    <TextView
+        android:layout_width="825px"
+        android:layout_height="5dp"
+        android:layout_centerHorizontal="true"
+        android:rotation="90"
+        android:background="@android:color/black"
+        android:layout_below="@+id/Score1Desc1"
+        />
+
+    <Button
+        android:layout_width="250px"
+        android:layout_height="150px"
+        android:layout_below="@+id/USTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Reset"
+        android:textSize="45px"
+        android:backgroundTint="@color/black"
+        android:id="@+id/ResetBtn"
+        />
+
+    <Spinner
+        android:layout_width="500px"
+        android:layout_height="75px"
+        android:layout_below="@+id/ResetBtn"
+        android:layout_centerHorizontal="true"
+        android:spinnerMode="dropdown"
+        android:textSize="70px"
+        android:backgroundTint="@color/black"
+        android:id="@+id/SportSel"
+        />
+
+</RelativeLayout>
